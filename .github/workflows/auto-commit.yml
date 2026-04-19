@@ -1,0 +1,40 @@
+name: Auto Commit
+
+on:
+  schedule:
+    - cron: '0 */1 * * *'
+  workflow_dispatch:
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Make changes
+        run: |
+          
+          echo "Auto commit - $(date '+%Y-%m-%d %H:%M:%S')" > auto_commit_log.txt
+          
+          
+          ls -la auto_commit_log.txt
+          
+        
+          cat auto_commit_log.txt
+          
+         
+          git status
+          
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Auto commit - $(date '+%Y-%m-%d %H:%M:%S')"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
